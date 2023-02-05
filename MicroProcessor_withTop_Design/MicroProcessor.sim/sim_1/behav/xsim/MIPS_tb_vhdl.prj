@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/Adder.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/Controller.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/MIPS.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/Mux.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/Mux5bit.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/PCAdder.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/ProgramCounter.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/RegisterFile.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/SignExtension.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/datamemory.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/instructionmemory.vhd" \
+"../../../../MicroProcessor.srcs/sources_1/new/shiftleft2.vhd" \
+"../../../../MicroProcessor.srcs/sim_1/new/MIPS_tb.vhd" \
+
+# Do not sort compile order
+nosort

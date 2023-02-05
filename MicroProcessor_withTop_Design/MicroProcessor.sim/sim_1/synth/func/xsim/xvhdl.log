@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.sim/sim_1/synth/func/xsim/MIPS_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU32Bit'
+INFO: [VRFC 10-3107] analyzing entity 'ProgramCounter'
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFile'
+INFO: [VRFC 10-3107] analyzing entity 'MIPS'

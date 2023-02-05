@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jun 13 10:27:29 2022
+# Process ID: 10840
+# Current directory: C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11740 C:\Users\samet\Desktop\topdesign\MicroProcessor_withTop_otuput\MicroProcessor.xpr
+# Log file: C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/vivado.log
+# Journal file: C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput\vivado.jou
+# Running On: DESKTOP-QJFQC6S, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 17041 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source MIPS_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source MIPS_tb.tcl
+current_sim simulation_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source MIPS_tb.tcl
+close_sim
+close_design
+update_compile_order -fileset sources_1
+close [ open C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd w ]
+add_files C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+source MIPS_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+source MIPS_tb.tcl
+close_sim

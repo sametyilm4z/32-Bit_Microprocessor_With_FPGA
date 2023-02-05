@@ -1,0 +1,344 @@
+
+*** Running vivado
+    with args -log MIPS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source MIPS.tcl -notrace
+Command: synth_design -top MIPS -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2136
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPS' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:13]
+INFO: [Synth 8-3491] module 'ALU32Bit' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:7' bound to instance 'ALU' of component 'ALU32Bit' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:40]
+INFO: [Synth 8-226] default block is never used [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:75]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:38]
+WARNING: [Synth 8-614] signal 'shiftleft' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:113]
+WARNING: [Synth 8-614] signal 'shiftright' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (1#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:18]
+INFO: [Synth 8-3491] module 'Controller' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Controller.vhd:5' bound to instance 'Cont' of component 'Controller' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'Controller' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Controller.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (2#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Controller.vhd:23]
+INFO: [Synth 8-3491] module 'dataMemory' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/datamemory.vhd:5' bound to instance 'Data' of component 'dataMemory' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'dataMemory' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/datamemory.vhd:16]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/datamemory.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'dataMemory' (3#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/datamemory.vhd:16]
+INFO: [Synth 8-3491] module 'instructionmemory' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/instructionmemory.vhd:5' bound to instance 'Inst' of component 'instructionmemory' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'instructionmemory' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/instructionmemory.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'instructionmemory' (4#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/instructionmemory.vhd:12]
+INFO: [Synth 8-3491] module 'ProgramCounter' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ProgramCounter.vhd:3' bound to instance 'PC' of component 'ProgramCounter' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ProgramCounter.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (5#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ProgramCounter.vhd:12]
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:4' bound to instance 'RegF' of component 'RegisterFile' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:59]
+WARNING: [Synth 8-614] signal 'RegWrite' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:55]
+INFO: [Synth 8-226] default block is never used [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:101]
+INFO: [Synth 8-226] default block is never used [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/RegisterFile.vhd:18]
+INFO: [Synth 8-3491] module 'SignExtension' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/SignExtension.vhd:4' bound to instance 'SigE' of component 'SignExtension' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/SignExtension.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (7#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/SignExtension.vhd:13]
+INFO: [Synth 8-3491] module 'PCAdder' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/PCAdder.vhd:6' bound to instance 'PCA' of component 'PCAdder' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/PCAdder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (8#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/PCAdder.vhd:13]
+INFO: [Synth 8-3491] module 'seven_MUX' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd:5' bound to instance 'Mux5' of component 'seven_MUX' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'seven_MUX' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd:13]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd:18]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'seven_MUX' (9#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/seven_MUX.vhd:13]
+INFO: [Synth 8-3491] module 'Mux' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Mux.vhd:4' bound to instance 'Mux2' of component 'Mux' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'Mux' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Mux.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Mux' (10#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Mux.vhd:11]
+INFO: [Synth 8-3491] module 'Mux' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Mux.vhd:4' bound to instance 'Mux3' of component 'Mux' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:222]
+INFO: [Synth 8-3491] module 'Mux' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Mux.vhd:4' bound to instance 'Mux4' of component 'Mux' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:229]
+INFO: [Synth 8-3491] module 'Adder' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Adder.vhd:6' bound to instance 'AdALU' of component 'Adder' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'Adder' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Adder.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (11#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/Adder.vhd:14]
+INFO: [Synth 8-3491] module 'shiftleft2' declared at 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/shiftleft2.vhd:5' bound to instance 'SL2' of component 'shiftleft2' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'shiftleft2' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/shiftleft2.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'shiftleft2' (12#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/shiftleft2.vhd:16]
+WARNING: [Synth 8-3848] Net m1_reg in module/entity MIPS does not have driver. [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (13#1) [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/MIPS.vhd:13]
+WARNING: [Synth 8-7129] Port address[31] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[30] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[29] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[28] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[27] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[26] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[25] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[24] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[23] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[22] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[21] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[20] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[19] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[18] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[17] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[16] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[15] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[14] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[13] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[12] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[11] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[10] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[9] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[1] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[0] in module instructionmemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[31] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[30] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[29] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[28] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[27] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[26] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[25] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[24] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[23] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[22] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[21] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[20] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[19] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[18] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[17] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[16] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[15] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[14] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[13] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[12] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[11] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[10] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[9] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[8] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[1] in module dataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[0] in module dataMemory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-327] inferring latch for variable 'operationResult_reg' [C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.srcs/sources_1/new/ALU32Bit.vhd:121]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	  32 Input    6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 35    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	 129 Input   32 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	  11 Input    7 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+	  32 Input    1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+WARNING: [Synth 8-6014] Unused sequential element Data/memory_reg was removed. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    32|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |     1|
+|5     |LUT2    |    28|
+|6     |LUT3    |   164|
+|7     |LUT4    |    83|
+|8     |LUT5    |   172|
+|9     |LUT6    |   439|
+|10    |FDRE    |   103|
+|11    |LD      |    32|
+|12    |IBUF    |     2|
+|13    |OBUF    |    32|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |  1093|
+|2     |  ALU    |ALU32Bit       |    54|
+|3     |  PC     |ProgramCounter |   768|
+|4     |  RegF   |RegisterFile   |   235|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1260.465 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1260.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+Synth Design complete, checksum: a57fb805
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1260.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/samet/Desktop/topdesign/MicroProcessor_withTop_otuput/MicroProcessor.runs/synth_1/MIPS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPS_utilization_synth.rpt -pb MIPS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 13 11:53:57 2022...
